@@ -1,0 +1,6 @@
+-Exporter la fonction "helloWorld()" depuis testjs comme suit :
+export function helloWorld() {
+    console.log("Hello World");
+};
+-L'importer dans autrejs comme suit : 
+import { helloWorld } from "./test.js";
