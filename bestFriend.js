@@ -8,11 +8,13 @@
 function bestFriend(txt, a, b) {
     let boolArray = [];
     for (let i = 0; i < txt.length; i++) {
-        if (txt[i] == a || txt[i+1] == b) {
-            boolArray.push("true")
-        } else (
-            boolArray.push("false")
-        );
+        if (txt[i] == a) {
+            if (txt[i+1] == b) {
+                boolArray.push("true")
+            } else {
+                boolArray.push("false")
+            }
+        }
     }
     if (boolArray.includes("false")) {
         return false;
